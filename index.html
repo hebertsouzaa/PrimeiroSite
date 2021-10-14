@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylos.css" media="screen" />
+    <title>Formulario</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="principal.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="criar.html">Criar Login</a></li>
+            <li><a href="index.html">FAQ</a></li>
+            <li style="float:right"><a href="principal.html">Limpeza Mais</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="quadrado">
+            <div class="formulario">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Reclamações e Duvidas</legend>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="Nome completo" required/>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="E-mail" required/>
+                    </div>
+                    <div>
+                        <label for="date">Nascimento:</label>
+                        <input type="date" id="birthday" name="birthday" required>
+                    </div>
+                    <div>
+                        <label for="serviço">Serviço:</label>
+                        <select name="serviço" id="serviço">
+                            <option value="Limpeza">Limpeza</option>
+                            <option value="Estacionamento">Estacionamento</option>
+                            <option value="Segurança">Segurança</option>
+                            <option value="Conforto">Conforto</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="msg">Mensagem:</label>
+                        <textarea id="msg" placeholder="Descrevar o problema"  spellcheck="true" wrap="soft" required></textarea>
+                    </div>
+                    <div class="button">
+                        <button style="float:none" type="submit">Enviar sua mensagem</button>
+                    </div>
+                    <div>
+                        <input style="float:none" type="reset" value="Apagar">
+                    </div>
+                </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer> 
+        <ul>
+           <li style="float: none;"><a href="https://github.com/hebertsouzaa/hebertsouzaa" target="_blank">Desenvolvido por Hebert Souza</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
